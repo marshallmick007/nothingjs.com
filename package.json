@@ -1,0 +1,25 @@
+{
+  "name": "nothingjs.com",
+  "version": "1.0.0",
+  "description": "website for nothingjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marshallmick007/nothingjs.com.git"
+  },
+  "keywords": [
+    "nothingjs"
+  ],
+  "author": "Marshall Mickelson",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/marshallmick007/nothingjs.com/issues"
+  },
+  "homepage": "https://github.com/marshallmick007/nothingjs.com#readme",
+  "devDependencies": {
+    "flightplan": "^0.6.13"
+  }
+}
