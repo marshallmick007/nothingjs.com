@@ -1,0 +1,22 @@
+@import 'variables';
+
+@include breakpoint(small) {
+  .hero {
+    text-align: center;
+    background: $hero-background;
+    color: $light-green;
+  }
+
+  code {
+    padding: 3rem;
+    background: $hero-code-background;
+    border-radius: 6px;
+    border: 1px solid lighten($hero-code-background, 30%);
+    color: lighten($light-green, 15%);
+  }
+
+  .hero-download {
+    margin-top: 2rem;
+    line-height: 6rem + 1.5rem;
+  }
+}

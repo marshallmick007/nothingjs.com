@@ -1,8 +1,14 @@
 /*
- * =Personal Settings
+ * =Global Variables
  */
-$row-bottom-margin: 10px;
-
+$my-yellow: #F4D35E;
+$dark-purple: #282343;
+$light-purple: #454060;
+$light-green: #B0D0C5;
+$brown: #6B625B;
+$fixed-top-height: 64px;
+$hero-height-mobile: 300px;
+$hero-height-desktop: 500px;
 
 /*
  * =Foundation Overrides
@@ -10,41 +16,35 @@ $row-bottom-margin: 10px;
 /* Pull variable names and rename from the foundation source */
 $body-font-family: -apple-system-font, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 
-$yellow: #F4D35E;
-
 $foundation-palette: (
-  primary: #083D77,
-  secondary: #8D99AD,
+  primary: $dark-purple,
+  secondary: $light-purple,
   success: #C0BE37,
-  warning: $yellow,
+  warning: $my-yellow,
   alert: #F95738,
 );
 
 $light-gray: #edf2f4;
-//$medium-gray: #cacaca;
 $navbar-gray: #9d9d9d;
-$steel-gray: #8D99AD;
 $dark-gray: #393D41;
-//$black: #101010;
-//$white: #fefefe;
 
 $body-background: $white;
 
-$navbar-background: #393d41;
-// Colors from: https://coolors.co/app/083d77-ebebd3-f4d35e-ee964b-f95738
-$navbar-selected-border-color: $yellow; // #5B00FF;
-$section-header-color: #F95738; // #FF1654; // #FF0006;
-$article-title-color: #083D77; // #247BA0; // #483CFD;
-
-$article-selected-color: $light-gray;
-$article-actions-bg:     $medium-gray;
-$article-actions-fg:     $light-gray;
-$article-actions-area-height: 42px;
-
-$font-size-mobile: $global-font-size;
-//ceil(($global-font-size * 1.10));
 
 //== Media Breakpoints
 //
 //## additional media breakpoints
 $mobile-portrait-width:   560px;
+
+//== Z Indexes
+$zindex-fixed-top: 99;
+
+/*
+ * =Personal Settings
+ */
+
+$topbar-background: map-get($foundation-palette, "primary");
+$hero-background: map-get($foundation-palette, "primary");
+$hero-code-background: map-get($foundation-palette, "secondary");
+
+

@@ -1,0 +1,33 @@
+@import 'variables';
+
+@include breakpoint(small) {
+  body {
+    margin: 0;
+    padding: 0;
+    padding-top: $fixed-top-height;
+  }
+
+  .fixed-top {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: $zindex-fixed-top;
+    height: $fixed-top-height;
+    width: 100%;
+
+    .top-bar {
+      padding: 0;
+    }
+  }
+
+  .hero {
+    width: 100%;
+    height: $hero-height-mobile;
+  }
+}
+
+@include breakpoint(large) {
+  .hero {
+    height: $hero-height-desktop;
+  }
+}

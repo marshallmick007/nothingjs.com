@@ -1,0 +1,20 @@
+@import 'variables';
+
+@include breakpoint(small) {
+  .topbar {
+    background: $topbar-background;
+    color: $light-green;
+
+    ul {
+      list-style: none;
+      margin-bottom: 0;
+      line-height: $fixed-top-height;
+    }
+  }
+
+  .title-area {
+    .name {
+      font-size: 1.3rem;
+    }
+  }
+}

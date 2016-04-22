@@ -5,11 +5,11 @@
 // Can limit what gets built here. See node_modules/foundation-sites/scss/foundation.scss
 @include foundation-everything;
 
+@import 'includes/layout';
+@import 'includes/topbar';
+@import 'includes/hero';
 
 /* Mobile first design */
 @include breakpoint(small) {
-  body {
-    /* for bootstrap nav bar */
-    padding-top: 70px; 
-  }
+
 }
