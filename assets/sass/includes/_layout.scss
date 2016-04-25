@@ -4,7 +4,31 @@
   body {
     margin: 0;
     padding: 0;
+    //padding-top: $fixed-top-height;
+  }
+
+  #main-content {
+    min-height: 100%;
+  }
+  
+  #body-copy {
+    position:relative;
+    padding: $fixed-top-height 0;
+    padding-bottom: 300px
+  }
+
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     padding-top: $fixed-top-height;
+    .row {
+      padding-bottom: $fixed-top-height / 2;
+    }
+    
+    .final-row {
+      padding: 12px 0;
+    }
   }
 
   .fixed-top {
@@ -22,12 +46,12 @@
 
   .hero {
     width: 100%;
-    height: $hero-height-mobile;
+    padding: $fixed-top-height 0;
   }
+
 }
 
 @include breakpoint(large) {
   .hero {
-    height: $hero-height-desktop;
   }
 }

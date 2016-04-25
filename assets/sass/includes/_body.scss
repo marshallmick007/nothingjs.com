@@ -1,0 +1,9 @@
+@import 'variables';
+
+@include breakpoint(small) {
+  #body-copy {
+    .features > .columns {
+      margin-bottom: 24px;
+    }
+  }
+}

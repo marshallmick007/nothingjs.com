@@ -8,6 +8,8 @@
 @import 'includes/layout';
 @import 'includes/topbar';
 @import 'includes/hero';
+@import 'includes/body';
+@import 'includes/footer';
 
 /* Mobile first design */
 @include breakpoint(small) {

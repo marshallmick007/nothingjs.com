@@ -1,0 +1,26 @@
+@import 'variables';
+
+@include breakpoint(small) {
+  #footer {
+    background: $footer-background;
+    color: lighten($footer-background, 40%);
+
+    ul {
+      margin: 0;
+      list-style: none;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    a {
+      color: lighten($footer-background, 30%);
+
+      &:hover {
+        color: lighten($footer-background, 20%);
+      }
+    }
+  }
+}

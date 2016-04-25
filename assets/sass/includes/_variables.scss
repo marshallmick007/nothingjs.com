@@ -10,6 +10,9 @@ $fixed-top-height: 64px;
 $hero-height-mobile: 300px;
 $hero-height-desktop: 500px;
 
+$hero-logo-size: 76px;
+$hero-logo-padding: 5px;
+
 /*
  * =Foundation Overrides
  */
@@ -29,7 +32,7 @@ $navbar-gray: #9d9d9d;
 $dark-gray: #393D41;
 
 $body-background: $white;
-
+$footer-background: $brown;
 
 //== Media Breakpoints
 //
@@ -37,8 +40,8 @@ $body-background: $white;
 $mobile-portrait-width:   560px;
 
 //== Z Indexes
-$zindex-fixed-top: 99;
-
+// Can switch to -1 to force it below everything
+$zindex-fixed-top: 100;
 /*
  * =Personal Settings
  */
